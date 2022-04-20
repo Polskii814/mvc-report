@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Report{% endblock %}
+
+{% block content %}
+
+{% apply markdown_to_html %}
+Report
+=======
+
+    {% endapply %}
+
+    {{ include('report/kmom01.markdown.twig')|markdown_to_html }}
+
+
+{% endblock %}
